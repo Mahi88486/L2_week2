@@ -1,0 +1,136 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styles for the header */
+  .site-header {
+    background-color: #ffffff; /* Change background color as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    padding: 10px 0; /* Adjust padding as needed */
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure header stays on top */
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    max-width: 150px; /* Adjust logo size as needed */
+    margin-right: 100px;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .main-nav ul li {
+    margin-right: 20px; /* Adjust spacing between nav items */
+    margin-left : 50px;
+  }
+  
+  .main-nav ul li a {
+    text-decoration: none;
+    color: #333333; /* Adjust nav link color */
+    font-weight: bold;
+  }
+  
+  .cta .btn {
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: #ff5500; /* Adjust button color */
+    color: #ffffff; /* Button text color */
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left:px;
+  }
+  
+
+
+/* body */
+.container {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    max-width: 1200px;
+}
+.left-section, .right-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.right-section .splide {
+    height: 100%;
+}
+.product-info {
+    display: none;
+}
+.product-info.active {
+    display: block;
+}
+.product-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 10;
+}
+.product-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+/* Adjust subtitle color */
+.product-subtitle span {
+    color: black;
+}
+.product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    /* Limit to 3 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.product-price {
+    font-size: 20px;
+    color: #333;
+}
+.splide__arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.splide__arrow {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-section{
+    font-size: larger;
+}
